@@ -28,7 +28,7 @@ def checker(x, n, question): # procedure with three parameters
    
   else: 
     while x != question: # iteration 
-      print("Unfortunatly you are a robot.")
+      print("Unfortunately you are a robot.")
       x = input(question + "\n") # sequencing
       checker(x, n, question)
 
