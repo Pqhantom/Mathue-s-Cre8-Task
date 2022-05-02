@@ -1,6 +1,6 @@
 import random
 
-qadb = []
+qadb = [] # list
 qadb.append({
   "Question": "What animal goes Meow?",
   "Answer": "cat"
@@ -13,21 +13,23 @@ qadb.append({
   "Question": "What animal goes woof?",
   "Answer": "dog"
 })
-# ~~~~~  This is a tester to print the Answer Key in the terminal ~~~~~
-
-# def printing(n): # this printes the code with the format given 
-#   print(qadb[n]["Question"])
-#   print(qadb[n]["Answer"])
-              
-# def aba(): #simple function that prints out all of the Q&A entries 
-#   for n in range(len(qadb)):
-#     printing(n)
 
 def brain():
+  print("In order to prove your humanity please type the answer to the following question.")
   n = random.randint(0, 2)
   question = qadb[n]["Question"]
-  print(n)
-  print(question)
+  x = input(question + "\n")
+  checker(x, n, question) # call to procedure
  
+def checker(x, n, question): # procedure with three parameters
+  if x == qadb[n]["Answer"]: # selection
+   print("C O N G R A T U L A T I O N S  Y O U  A R E  A  H U M A N !")
+   quit()
+   
+  else: 
+    while x != question: # iteration 
+      print("Unfortunatly you are a robot.")
+      x = input(question + "\n") # sequencing
+      checker(x, n, question)
 
 brain()

@@ -1,21 +1,18 @@
-# MattxGavin
-Create Task Collab
+# MaThue's Cre8 Task
+Create Task
 
-Idea: To make a simple trivia game that randomly chooses questions from a list and perhaps provide the user with multiple answer options. 
+Idea: ~~To make a simple trivia game that randomly chooses questions from a list and perhaps provide the user with multiple answer options.~~ 
+**Test the Humanity of the User.**
 
-# Requirements ``for code lol``
-- instructions for the user  ~~because they are dum~~
+# Requirements
+- instructions for the user
 - use at least one list
-  - questions
-  - answer
 - at least one procedure with:
-  <br>``what is a procedure?``
   - procedure name
-  - return type ``(if used?)``
   - one or more parameters
 - algorithm that includes:
   - sequencing
   - selection
   - iteration
-- calls to the procedure?
+- calls to the procedure
 - an input and output
